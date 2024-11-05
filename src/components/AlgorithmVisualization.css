@@ -1,0 +1,126 @@
+.algorithm-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.array-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+.algorithm-container button {
+  background-color: #616561; 
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.algorithm-container button:hover {
+  background-color: #222523; 
+}
+
+.array-bar {
+  width: 20px;
+  margin: 0 2px;
+  background-color: #69b3a2;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.tree-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden; 
+  background-color: #f9f9f9;
+  height: 300px; 
+  width: 600px; 
+  margin: 0 auto; 
+  align-items: center;
+}
+
+.node {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #229533;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.node.active {
+  background-color: #dd8909; 
+  transform: scale(1.1); 
+}
+
+.node:hover {
+  cursor: pointer;
+  background-color: #04a915; 
+}
+
+@media (max-width: 768px) {
+  .tree-container {
+    width: 100%;
+    height: 250px; 
+  }
+
+  .node {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .algorithm-container button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .array-bar {
+    width: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tree-container {
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    
+  }
+
+  .node {
+    width: 25px;
+    height: 25px;
+    font-size: 0.7rem;
+  }
+
+  .algorithm-container button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .array-container {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .array-bar {
+    width: 17px;
+  }
+}
